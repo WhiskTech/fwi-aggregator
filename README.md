@@ -1,4 +1,4 @@
-## Farmers' Classified Scraper
+## Farmers' Classified Aggregator
 -------
 
 ### Installation
