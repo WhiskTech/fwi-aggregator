@@ -34,13 +34,13 @@ function handleResponse(err, response) {
         });
         process.stdout.clearLine();  // clear current text
         process.stdout.cursorTo(0);
-        process.stdout.write('Scraping http://classified.fwi.co.uk/browse/page-' + (x + 1) + '.... (' + ((parsed / total) * 100).toFixed(2) + '% done)');
+        process.stdout.write('Fetching http://classified.fwi.co.uk/browse/page-' + (x + 1) + '.... (' + ((parsed / total) * 100).toFixed(2) + '% done)');
 	if (parsed >= total) {
 	    fs.writeFile('out.json', JSON.stringify(result), function(err) {
 		if (err) {
 		    throw err;
 		}
-                console.log('\nDone! JSON written to out.json :D\nThis scraper was made by whiskers75 - whiskers75.com\nUse, modify, and change at will - no permission required.\n\n');
+                console.log('\nDone! JSON written to out.json :D\nThis aggregator was made by whiskers75 - whiskers75.com\nUse, modify, and change at will - no permission required.\nGathered data is subject to Farmers\' Classified Terms and Conditions, and any other regulations.\n');
                 process.exit(0);
 	    });
 	}
