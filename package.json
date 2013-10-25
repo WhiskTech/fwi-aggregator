@@ -1,8 +1,8 @@
 {
-    "name": "fwi-scraper",
+    "name": "fwi-aggregator",
     "version": "0.0.1",
     "author": "whiskers75",
-    "description": "A Farmers Classified scraper",
+    "description": "A Farmers Classified aggregator",
     "engines": {
         "node": "0.10"
     },
@@ -13,6 +13,6 @@
         "soupselect": "*"
     },
     "scripts": {
-        "start": "node scraper.js"
+        "start": "node start.js"
     }
 }
